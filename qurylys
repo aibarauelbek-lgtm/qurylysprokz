@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111214">
+  <meta name="description" content="QURYLYS PRO — үй салу, евро ремонт, қоршау және жөндеу жұмыстары. Сапалы құрылыс қызметтері.">
+  <title>QURYLYS PRO — Құрылыс және жөндеу</title>
+  <style>
+    :root{--bg:#101113;--panel:#191b1f;--panel2:#202329;--text:#f7f7f5;--muted:#a9abb1;--yellow:#f5bd32;--yellow2:#ffd66b;--line:rgba(255,255,255,.1);--radius:20px;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:auto}.accent{color:var(--yellow)}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--yellow);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.eyebrow:before{content:"";width:25px;height:2px;background:var(--yellow)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:14px 21px;background:var(--yellow);color:#171717;font-weight:800;cursor:pointer;transition:.2s}.btn:hover{background:var(--yellow2);transform:translateY(-2px)}.btn-outline{background:transparent;color:var(--text);border:1px solid var(--line)}.btn-outline:hover{background:#25272b;color:var(--yellow)}.header{position:sticky;top:0;z-index:20;background:rgba(16,17,19,.91);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:.04em;font-size:1.12rem}.brand-mark{width:38px;height:38px;display:grid;place-items:center;background:var(--yellow);color:#141414;border-radius:11px;font-size:1.3rem}.nav-links{display:flex;align-items:center;gap:25px;color:#d3d3d3;font-size:.92rem}.nav-links a:hover{color:var(--yellow)}.nav-actions{display:flex;align-items:center;gap:10px}.lang-btn,.menu-btn{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:10px;padding:9px 12px;cursor:pointer;font-weight:800}.menu-btn{display:none;font-size:1.2rem}.hero{position:relative;min-height:660px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,rgba(10,11,12,.97) 0%,rgba(10,11,12,.86) 48%,rgba(10,11,12,.28) 100%),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85') center/cover no-repeat}
+    .hero{background-image:linear-gradient(90deg,rgba(10,11,12,.97) 0%,rgba(10,11,12,.86) 48%,rgba(10,11,12,.30) 100%),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85')}
+    .hero-content{max-width:720px;padding:90px 0}.hero h1{font-size:clamp(2.6rem,6vw,5.4rem);line-height:1.02;letter-spacing:-.055em;margin:22px 0}.hero p{max-width:570px;color:#d0d0d0;font-size:1.08rem;margin:0 0 30px}.hero-buttons{display:flex;flex-wrap:wrap;gap:12px}.hero-note{display:flex;align-items:center;gap:12px;margin-top:38px;color:#c5c5c5;font-size:.88rem}.hero-note strong{color:var(--yellow);font-size:1.3rem}.section{padding:92px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:35px}.section h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;letter-spacing:-.04em;margin:13px 0 0}.section-head p{max-width:420px;color:var(--muted);margin:0}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.25s}.service-card:hover{transform:translateY(-6px);border-color:rgba(245,189,50,.55)}.service-image{height:190px;background-size:cover;background-position:center;position:relative}.service-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.45),transparent)}.service-body{padding:21px}.service-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:rgba(245,189,50,.13);color:var(--yellow);font-size:1.25rem;margin-bottom:15px}.service-body h3{margin:0 0 8px;font-size:1.15rem}.service-body p{color:var(--muted);font-size:.9rem;margin:0}.about{background:#17191d}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-photo{min-height:470px;border-radius:25px;background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=85') center/cover;position:relative}.photo-tag{position:absolute;bottom:22px;left:22px;background:var(--yellow);color:#171717;padding:16px 20px;border-radius:14px;font-weight:900}.about-copy p{color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:25px 0}.check{display:flex;gap:10px;align-items:flex-start;color:#e6e6e6;font-size:.94rem}.check b{color:var(--yellow)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:25px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius)}.step-num{color:var(--yellow);font-size:2rem;font-weight:950}.step h3{margin:10px 0 7px}.step p{margin:0;color:var(--muted);font-size:.93rem}.cta{padding:65px 0;background:linear-gradient(110deg,#f5bd32,#e69e16);color:#171717}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{font-size:clamp(2rem,4vw,3rem);line-height:1.08;margin:0 0 10px}.cta p{margin:0;color:#34280e}.cta .btn{background:#171717;color:#fff}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px}.contact-info{display:grid;gap:14px;margin-top:25px}.contact-item{display:flex;gap:14px;align-items:center;padding:17px;background:var(--panel);border:1px solid var(--line);border-radius:15px}.contact-item .service-icon{margin:0;flex:none}.contact-item small{display:block;color:var(--muted)}.contact-form{padding:25px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius)}.field{margin-bottom:15px}.field label{display:block;margin-bottom:7px;color:#ddd;font-size:.9rem}.field input,.field textarea{width:100%;border:1px solid var(--line);background:#111316;color:white;border-radius:11px;padding:13px 14px;outline:none}.field input:focus,.field textarea:focus{border-color:var(--yellow)}.field textarea{min-height:110px;resize:vertical}.contact-form .btn{width:100%}.form-hint{color:var(--muted);font-size:.8rem;margin:12px 0 0}.footer{padding:27px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.mobile-call{display:none}
+    @media(max-width:900px){.nav-links{gap:14px}.services{grid-template-columns:repeat(2,1fr)}.hero{min-height:590px}.about-grid{gap:30px}.contact-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:680px){.container{width:min(100% - 30px,var(--max))}.nav{height:68px}.menu-btn{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:18px 22px 22px;background:#151619;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.nav-actions .btn{display:none}.hero{min-height:620px;background-position:58% center}.hero-content{padding:75px 0}.hero h1{font-size:clamp(2.55rem,13vw,4.1rem)}.hero p{font-size:1rem}.section{padding:68px 0}.section-head{display:block}.section-head p{margin-top:15px}.services{gap:11px}.service-image{height:145px}.service-body{padding:15px}.service-body h3{font-size:1rem}.service-body p{font-size:.83rem}.about-grid,.contact-grid{grid-template-columns:1fr}.about-photo{min-height:330px;order:2}.checks{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.cta-inner{display:block}.cta .btn{margin-top:22px}.mobile-call{display:flex;position:fixed;z-index:19;bottom:14px;left:15px;right:15px;box-shadow:0 10px 30px #0008}.footer{padding-bottom:85px}}
+    @media(max-width:390px){.services{grid-template-columns:1fr}.service-image{height:190px}.lang-btn{padding:8px 9px}.brand{font-size:1rem}}
+  </style>
+</head>
+<body>
+  <!-- IMPORTANT: Replace the phone and WhatsApp placeholders in the CONFIG section below. -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home"><span class="brand-mark">⌂</span><span>QURYLYS <span class="accent">PRO</span></span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="navHome">Басты бет</a><a href="#services" data-i18n="navServices">Қызметтер</a><a href="#about" data-i18n="navAbout">Біз туралы</a><a href="#steps" data-i18n="navSteps">Жұмыс тәртібі</a><a href="#contact" data-i18n="navContact">Байланыс</a>
+      </nav>
+      <div class="nav-actions"><button class="lang-btn" id="langBtn" type="button">RU</button><a class="btn" href="#contact" data-i18n="navOrder">Тапсырыс беру</a><button class="menu-btn" id="menuBtn" aria-label="Мәзірді ашу">☰</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container"><div class="hero-content">
+        <span class="eyebrow" data-i18n="heroEyebrow">Құрылыс және жөндеу жұмыстары</span>
+        <h1 data-i18n="heroTitle">Сапалы құрылыс.<br><span class="accent">Сенімді нәтиже.</span></h1>
+        <p data-i18n="heroText">Үй салудан бастап толық жөндеуге дейін. Әр жобада ұқыптылыққа, сапаға және келісілген жұмыс тәртібіне мән береміз.</p>
+        <div class="hero-buttons"><a class="btn" href="#contact" data-i18n="heroBtn">Жобаны талқылау ↗</a><a class="btn btn-outline" href="#services" data-i18n="heroMore">Қызметтерді көру</a></div>
+        <div class="hero-note"><strong>Q/P</strong><span data-i18n="heroNote">Үйіңізге сенімді құрылыс шешімдері</span></div>
+      </div></div>
+    </section>
+
+    <section class="section" id="services"><div class="container">
+      <div class="section-head"><div><span class="eyebrow" data-i18n="servicesEyebrow">Біздің бағыттар</span><h2 data-i18n="servicesTitle">Қызметтеріміз</h2></div><p data-i18n="servicesIntro">Құрылыс пен жөндеудің негізгі түрлерін бір командадан алыңыз.</p></div>
+      <div class="services">
+        <article class="service-card"><div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85')"></div><div class="service-body"><div class="service-icon">⌂</div><h3 data-i18n="s1Title">Үй салу</h3><p data-i18n="s1Text">Үйді іргетастан бастап негізгі құрылыс кезеңдеріне дейін тұрғызу.</p></div></article>
+        <article class="service-card"><div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80')"></div><div class="service-body"><div class="service-icon">✦</div><h3 data-i18n="s2Title">Евро ремонт</h3><p data-i18n="s2Text">Пәтер мен үйдің ішкі әрлеуі, заманауи интерьер және жөндеу.</p></div></article>
+        <article class="service-card"><div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=85')"></div><div class="service-body"><div class="service-icon">▥</div><h3 data-i18n="s3Title">Забор орнату</h3><p data-i18n="s3Text">Аулаға қоршау, қақпа және басқа да сыртқы құрылымдар орнату.</p></div></article>
+        <article class="service-card"><div class="service-image" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=85')"></div><div class="service-body"><div class="service-icon">⚒</div><h3 data-i18n="s4Title">Жөндеу жұмыстары</h3><p data-i18n="s4Text">Ішкі және сыртқы жөндеу, әрлеу және құрылысқа қатысты жұмыстар.</p></div></article>
+      </div>
+    </div></section>
+
+    <section class="section about" id="about"><div class="container about-grid">
+      <div class="about-photo"><div class="photo-tag" data-i18n="photoTag">QURYLYS PRO — сапаға мән береміз</div></div>
+      <div class="about-copy"><span class="eyebrow" data-i18n="aboutEyebrow">Біз туралы</span><h2 data-i18n="aboutTitle">Әр жобада — жауапкершілік пен ұқыптылық</h2><p data-i18n="aboutText">QURYLYS PRO құрылыс және жөндеу жұмыстарына арналған қызметтерді ұсынады. Біз клиенттің талабын тыңдап, жұмыс көлемі мен мерзімін алдын ала келісуге мән береміз.</p>
+        <div class="checks"><div class="check"><b>✓</b><span data-i18n="point1">Жұмыс барысын алдын ала талқылау</span></div><div class="check"><b>✓</b><span data-i18n="point2">Материал мен бюджетке сай шешім</span></div><div class="check"><b>✓</b><span data-i18n="point3">Келісілген талаптарды сақтау</span></div><div class="check"><b>✓</b><span data-i18n="point4">Клиентпен тұрақты байланыс</span></div></div>
+        <a class="btn" href="#contact" data-i18n="aboutBtn">Бізге хабарласыңыз ↗</a>
+      </div>
+    </div></section>
+
+    <section class="section" id="steps"><div class="container"><div class="section-head"><div><span class="eyebrow" data-i18n="stepsEyebrow">Қалай жұмыс істейміз?</span><h2 data-i18n="stepsTitle">Үш қарапайым қадам</h2></div><p data-i18n="stepsIntro">Алғашқы хабарласудан бастап жұмыс жоспарын келісуге дейін.</p></div>
+      <div class="steps"><article class="step"><div class="step-num">01</div><h3 data-i18n="step1Title">Өтінім қалдырыңыз</h3><p data-i18n="step1Text">Бізге телефон немесе WhatsApp арқылы хабарласып, жұмысты түсіндіріңіз.</p></article><article class="step"><div class="step-num">02</div><h3 data-i18n="step2Title">Талқылау және есептеу</h3><p data-i18n="step2Text">Жоба көлемін, материалдарды, баға мен мерзімді келісеміз.</p></article><article class="step"><div class="step-num">03</div><h3 data-i18n="step3Title">Жұмысты бастау</h3><p data-i18n="step3Text">Келісілген жоспар бойынша құрылыс немесе жөндеу жұмыстары орындалады.</p></article></div>
+    </div></section>
+
+    <section class="cta"><div class="container cta-inner"><div><h2 data-i18n="ctaTitle">Құрылыс жоспарыңыз бар ма?</h2><p data-i18n="ctaText">Жобаңызды бірге талқылайық. Алғашқы кеңеске хабарласыңыз.</p></div><a class="btn" href="#contact" data-i18n="ctaBtn">Қазір хабарласу ↗</a></div></section>
+
+    <section class="section" id="contact"><div class="container contact-grid">
+      <div><span class="eyebrow" data-i18n="contactEyebrow">Байланыс</span><h2 data-i18n="contactTitle">Жобаңызды бірге бастайық</h2><p style="color:var(--muted)" data-i18n="contactText">Қандай жұмыс қажет екенін жазыңыз немесе тікелей қоңырау шалыңыз.</p>
+        <div class="contact-info"><a class="contact-item" id="phoneLink" href="#"><span class="service-icon">☎</span><span><small data-i18n="phoneLabel">Телефон</small><strong id="phoneText">Нөмірді енгізіңіз</strong></span></a><a class="contact-item" id="waLink" href="#" target="_blank" rel="noopener"><span class="service-icon">◉</span><span><small>WhatsApp</small><strong data-i18n="waLabel">WhatsApp арқылы жазу</strong></span></a></div>
+      </div>
+      <form class="contact-form" id="contactForm"><h3 data-i18n="formTitle">Кері байланыс</h3><div class="field"><label for="clientName" data-i18n="nameLabel">Атыңыз</label><input id="clientName" name="name" required placeholder="Атыңызды жазыңыз"></div><div class="field"><label for="clientPhone" data-i18n="clientPhoneLabel">Телефон нөміріңіз</label><input id="clientPhone" name="phone" type="tel" required placeholder="+7 7XX XXX XX XX"></div><div class="field"><label for="clientMessage" data-i18n="messageLabel">Қандай қызмет қажет?</label><textarea id="clientMessage" name="message" required placeholder="Мысалы: үй салу, евро ремонт..."></textarea></div><button class="btn" type="submit" data-i18n="sendBtn">WhatsApp-қа жіберу ↗</button><p class="form-hint" data-i18n="formHint">Өтінім WhatsApp арқылы жіберіледі. Ол үшін төмендегі кодқа өз нөміріңізді енгізіңіз.</p></form>
+    </div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">⌂</span><span>QURYLYS <span class="accent">PRO</span></span></a><span data-i18n="footerText">© 2026 QURYLYS PRO. Барлық құқықтар қорғалған.</span><span data-i18n="footerMade">Сапалы құрылыс — сенімді таңдау.</span></div></footer>
+  <a class="btn mobile-call" id="mobileCall" href="#contact" data-i18n="mobileCall">Байланысу</a>
+
+  <script>
+    // ===== CONFIG: осы жерге компанияның нақты телефон нөмірін енгізіңіз =====
+    // Мысал форматы: phoneDisplay: "+7 701 123 45 67", whatsappNumber: "77011234567"
+    const CONFIG = {
+      phoneDisplay: "+7 706 717 69 08",
+      phoneLink: "+77067176908",
+      whatsappNumber: "77067176908"
+    };
+
+    const translations = {
+      kk:{
+        navHome:"Басты бет",navServices:"Қызметтер",navAbout:"Біз туралы",navSteps:"Жұмыс тәртібі",navContact:"Байланыс",navOrder:"Тапсырыс беру",
+        heroEyebrow:"Құрылыс және жөндеу жұмыстары",heroTitle:'Сапалы құрылыс.<br><span class="accent">Сенімді нәтиже.</span>',heroText:"Үй салудан бастап толық жөндеуге дейін. Әр жобада ұқыптылыққа, сапаға және келісілген жұмыс тәртібіне мән береміз.",heroBtn:"Жобаны талқылау ↗",heroMore:"Қызметтерді көру",heroNote:"Үйіңізге сенімді құрылыс шешімдері",
+        servicesEyebrow:"Біздің бағыттар",servicesTitle:"Қызметтеріміз",servicesIntro:"Құрылыс пен жөндеудің негізгі түрлерін бір командадан алыңыз.",
+        s1Title:"Үй салу",s1Text:"Үйді іргетастан бастап негізгі құрылыс кезеңдеріне дейін тұрғызу.",s2Title:"Евро ремонт",s2Text:"Пәтер мен үйдің ішкі әрлеуі, заманауи интерьер және жөндеу.",s3Title:"Забор орнату",s3Text:"Аулаға қоршау, қақпа және басқа да сыртқы құрылымдар орнату.",s4Title:"Жөндеу жұмыстары",s4Text:"Ішкі және сыртқы жөндеу, әрлеу және құрылысқа қатысты жұмыстар.",
+        photoTag:"QURYLYS PRO — сапаға мән береміз",aboutEyebrow:"Біз туралы",aboutTitle:"Әр жобада — жауапкершілік пен ұқыптылық",aboutText:"QURYLYS PRO құрылыс және жөндеу жұмыстарына арналған қызметтерді ұсынады. Біз клиенттің талабын тыңдап, жұмыс көлемі мен мерзімін алдын ала келісуге мән береміз.",point1:"Жұмыс барысын алдын ала талқылау",point2:"Материал мен бюджетке сай шешім",point3:"Келісілген талаптарды сақтау",point4:"Клиентпен тұрақты байланыс",aboutBtn:"Бізге хабарласыңыз ↗",
+        stepsEyebrow:"Қалай жұмыс істейміз?",stepsTitle:"Үш қарапайым қадам",stepsIntro:"Алғашқы хабарласудан бастап жұмыс жоспарын келісуге дейін.",step1Title:"Өтінім қалдырыңыз",step1Text:"Бізге телефон немесе WhatsApp арқылы хабарласып, жұмысты түсіндіріңіз.",step2Title:"Талқылау және есептеу",step2Text:"Жоба көлемін, материалдарды, баға мен мерзімді келісеміз.",step3Title:"Жұмысты бастау",step3Text:"Келісілген жоспар бойынша құрылыс немесе жөндеу жұмыстары орындалады.",
+        ctaTitle:"Құрылыс жоспарыңыз бар ма?",ctaText:"Жобаңызды бірге талқылайық. Алғашқы кеңеске хабарласыңыз.",ctaBtn:"Қазір хабарласу ↗",contactEyebrow:"Байланыс",contactTitle:"Жобаңызды бірге бастайық",contactText:"Қандай жұмыс қажет екенін жазыңыз немесе тікелей қоңырау шалыңыз.",phoneLabel:"Телефон",waLabel:"WhatsApp арқылы жазу",formTitle:"Кері байланыс",nameLabel:"Атыңыз",clientPhoneLabel:"Телефон нөміріңіз",messageLabel:"Қандай қызмет қажет?",sendBtn:"WhatsApp-қа жіберу ↗",formHint:"Өтінім WhatsApp арқылы жіберіледі. Ол үшін төмендегі кодқа өз нөміріңізді енгізіңіз.",footerText:"© 2026 QURYLYS PRO. Барлық құқықтар қорғалған.",footerMade:"Сапалы құрылыс — сенімді таңдау.",mobileCall:"Байланысу",namePlaceholder:"Атыңызды жазыңыз",messagePlaceholder:"Мысалы: үй салу, евро ремонт...",numberMissing:"Алдымен кодтағы CONFIG бөліміне WhatsApp нөмірін енгізіңіз."
+      },
+      ru:{
+        navHome:"Главная",navServices:"Услуги",navAbout:"О компании",navSteps:"Как работаем",navContact:"Контакты",navOrder:"Оставить заявку",
+        heroEyebrow:"Строительство и ремонт",heroTitle:'Качественное строительство.<br><span class="accent">Надёжный результат.</span>',heroText:"От строительства дома до комплексного ремонта. В каждом проекте мы уделяем внимание качеству, аккуратности и согласованному плану работ.",heroBtn:"Обсудить проект ↗",heroMore:"Наши услуги",heroNote:"Надёжные решения для вашего дома",
+        servicesEyebrow:"Наши направления",servicesTitle:"Наши услуги",servicesIntro:"Основные виды строительных и ремонтных работ от одной команды.",
+        s1Title:"Строительство домов",s1Text:"Строительство дома от фундамента до основных этапов возведения.",s2Title:"Евроремонт",s2Text:"Внутренняя отделка квартир и домов, современный интерьер и ремонт.",s3Title:"Установка заборов",s3Text:"Установка ограждений, ворот и других наружных конструкций.",s4Title:"Ремонтные работы",s4Text:"Внутренний и наружный ремонт, отделочные и строительные работы.",
+        photoTag:"QURYLYS PRO — внимание к качеству",aboutEyebrow:"О компании",aboutTitle:"Ответственность и аккуратность в каждом проекте",aboutText:"QURYLYS PRO предлагает услуги в сфере строительства и ремонта. Мы внимательно изучаем пожелания клиента и заранее согласовываем объём и сроки работ.",point1:"Предварительное обсуждение работ",point2:"Решения под материалы и бюджет",point3:"Соблюдение согласованных условий",point4:"Постоянная связь с клиентом",aboutBtn:"Связаться с нами ↗",
+        stepsEyebrow:"Как мы работаем?",stepsTitle:"Три простых шага",stepsIntro:"От первого обращения до согласования плана работ.",step1Title:"Оставьте заявку",step1Text:"Позвоните или напишите в WhatsApp и расскажите о задаче.",step2Title:"Обсуждение и расчёт",step2Text:"Согласуем объём проекта, материалы, стоимость и сроки.",step3Title:"Начало работ",step3Text:"Выполняем строительные или ремонтные работы по согласованному плану.",
+        ctaTitle:"Планируете строительство?",ctaText:"Давайте обсудим ваш проект. Свяжитесь с нами для первой консультации.",ctaBtn:"Связаться сейчас ↗",contactEyebrow:"Контакты",contactTitle:"Давайте начнём ваш проект",contactText:"Напишите, какая работа вам нужна, или позвоните напрямую.",phoneLabel:"Телефон",waLabel:"Написать в WhatsApp",formTitle:"Обратная связь",nameLabel:"Ваше имя",clientPhoneLabel:"Ваш номер телефона",messageLabel:"Какая услуга вам нужна?",sendBtn:"Отправить в WhatsApp ↗",formHint:"Заявка отправится через WhatsApp. Для этого укажите свой номер в разделе CONFIG ниже.",footerText:"© 2026 QURYLYS PRO. Все права защищены.",footerMade:"Качественное строительство — надёжный выбор.",mobileCall:"Связаться",namePlaceholder:"Введите ваше имя",messagePlaceholder:"Например: строительство дома, евроремонт...",numberMissing:"Сначала укажите номер WhatsApp в разделе CONFIG кода."
+      }
+    };
+    let currentLang="kk";
+    const $=(id)=>document.getElementById(id);
+    function setLanguage(lang){
+      currentLang=lang;document.documentElement.lang=lang;
+      document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;if(translations[lang][key])el.innerHTML=translations[lang][key]});
+      $("langBtn").textContent=lang==="kk"?"RU":"KZ";
+      $("clientName").placeholder=translations[lang].namePlaceholder;
+      $("clientMessage").placeholder=translations[lang].messagePlaceholder;
+    }
+    $("langBtn").addEventListener("click",()=>setLanguage(currentLang==="kk"?"ru":"kk"));
+    $("menuBtn").addEventListener("click",()=>$("navLinks").classList.toggle("open"));
+    document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>$("navLinks").classList.remove("open")));
+    function setupContacts(){
+      const configured=CONFIG.whatsappNumber && !CONFIG.whatsappNumber.includes("X");
+      $("phoneText").textContent=CONFIG.phoneDisplay;
+      if(CONFIG.phoneLink){$("phoneLink").href="tel:"+CONFIG.phoneLink.replace(/[^\d+]/g,"");}
+      else $("phoneLink").addEventListener("click",e=>{e.preventDefault();alert(currentLang==="kk"?"Телефон нөмірі әлі енгізілмеген.":"Номер телефона пока не указан.");});
+      if(configured){$("waLink").href="https://wa.me/"+CONFIG.whatsappNumber.replace(/\D/g,"");}
+      else $("waLink").addEventListener("click",e=>{e.preventDefault();alert(translations[currentLang].numberMissing);});
+      $("contactForm").addEventListener("submit",e=>{
+        e.preventDefault();
+        if(!configured){alert(translations[currentLang].numberMissing);return;}
+        const name=$("clientName").value.trim(),phone=$("clientPhone").value.trim(),message=$("clientMessage").value.trim();
+        const body=currentLang==="kk"
+          ?`Сәлеметсіз бе! QURYLYS PRO сайты арқылы хабарласып тұрмын.\nАты: ${name}\nТелефон: ${phone}\nҚызмет: ${message}`
+          :`Здравствуйте! Пишу с сайта QURYLYS PRO.\nИмя: ${name}\nТелефон: ${phone}\nУслуга: ${message}`;
+        window.open("https://wa.me/"+CONFIG.whatsappNumber.replace(/\D/g,"")+"?text="+encodeURIComponent(body),"_blank","noopener");
+      });
+    }
+    setupContacts();setLanguage("kk");
+  </script>
+</body>
+</html>
